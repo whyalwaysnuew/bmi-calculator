@@ -25,7 +25,7 @@
   --bs-gray-900: #181C32;
   --bs-white: #ffffff;
   --bs-light: #f5f8fa;
-  --bs-primary: #0467B3;
+  --bs-primary: #009ef7;
   --bs-secondary: #E4E6EF;
   --bs-success: #50cd89;
   --bs-info: #7239ea;
@@ -45,7 +45,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 24, 28, 50;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: Manrope, Inter, Helvetica, "sans-serif";
+  --bs-font-sans-serif: Inter, Helvetica, "sans-serif";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -26630,7 +26630,7 @@ textarea.form-control-lg {
   --kt-gray-900-rgb: 24, 28, 50;
   --kt-white: #ffffff;
   --kt-light: #f5f8fa;
-  --kt-primary: #0467B3;
+  --kt-primary: #009ef7;
   --kt-secondary: #E4E6EF;
   --kt-success: #50cd89;
   --kt-info: #7239ea;
@@ -45904,7 +45904,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 13px !important;
   font-weight: 400;
-  font-family: Manrope, Inter, Helvetica, "sans-serif";
+  font-family: Inter, Helvetica, "sans-serif";
 }
 @media (max-width: 991.98px) {
   html,
