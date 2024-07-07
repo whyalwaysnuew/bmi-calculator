@@ -16,15 +16,13 @@ License: For each use you must have a valid license purchased only from above li
 	<head><base href="../../../"/>
 		<title><?= @$title; ?></title>
 		<meta charset="utf-8" />
-		<meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Flask & Laravel versions. Grab your copy now and get life-time updates for free." />
-		<meta name="keywords" content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Flask & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular. Laravel, Asp.Net Core, Ruby on Rails, Spring Boot, Blazor, Django, Express Node.js & Flask Admin Dashboard Theme" />
-		<meta property="og:url" content="https://keenthemes.com/metronic" />
+		<meta property="og:title" content="Gian Pranata | BMR Calculator" />
+		<meta property="og:url" content="" />
 		<meta property="og:site_name" content="Keenthemes | Metronic" />
-		<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
+		<link rel="canonical" href="#" />
 		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
 		<!--begin::Fonts(mandatory for all pages)-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
@@ -49,9 +47,9 @@ License: For each use you must have a valid license purchased only from above li
 			<!--begin::Authentication - Sign-in -->
 			<div class="d-flex flex-column flex-column-fluid flex-lg-row justify-content-center">
 				<!--begin::Body-->
-				<div class="d-flex flex-center w-lg-50 p-10">
+				<div class="d-flex flex-center w-lg-75 p-5">
 					<!--begin::Card-->
-					<div class="card rounded-3 w-md-550px">
+					<div class="card rounded-3 w-md-750px">
 						<!--begin::Card body-->
 						<div class="card-body p-10 p-lg-20">
                             <!--begin::Heading-->
@@ -87,12 +85,14 @@ License: For each use you must have a valid license purchased only from above li
                                         
                                         <!--begin::Input group=-->
                                         <div class="fv-row mb-8">
+                                            <label for="usernameLogin" class="form-label fw-semibold">Username</label>
                                             <!--begin::Username-->
                                             <input type="text" placeholder="Username" name="username" id="usernameLogin" autocomplete="off" class="form-control bg-transparent" />
                                             <!--end::Username-->
                                         </div>
                                         <!--end::Input group=-->
                                         <div class="fv-row mb-8">
+                                            <label for="passwordLogin" class="form-label fw-semibold">Password</label>
                                             <!--begin::Password-->
                                             <input type="password" placeholder="Password" name="password" id="passwordLogin" autocomplete="off" class="form-control bg-transparent" />
                                             <!--end::Password-->
@@ -117,79 +117,45 @@ License: For each use you must have a valid license purchased only from above li
                                     <form novalidate="novalidate" method="POST" class="form" id="FormRegister" enctype="multipart/form-data">
                                         <?= session()->getFlashdata('message') ?>
     
-                                        <!-- <div class="d-flex flex-wrap gap-2"> -->
-                                            <!--begin::Input group=-->
-                                            <div class="fv-row mb-8">
-                                                <!--begin::Full Name-->
-                                                <input type="text" required placeholder="Name e.g. Gian Pranata" name="name" id="name" autocomplete="off" class="form-control bg-transparent" />
-                                                <!--end::Full Name-->
-                                            </div>
-                                            <!--end::Input group=-->
-        
-                                            <!--begin::Input group=-->
-                                            <div class="fv-row mb-8">
-                                                <!--begin::Username-->
-                                                <input type="text" required placeholder="Username e.g. gianpranata" name="username" id="usernameRegister" autocomplete="off" class="form-control bg-transparent" />
-                                                <!--end::Username-->
-                                            </div>
-                                            <!--end::Input group=-->
-    
                                             <div class="d-flex gap-2">
                                                 <!--begin::Input group=-->
-                                                <div class="col fv-row mb-8">
-                                                    
-                                                    <input type="text" required placeholder="Weight e.g. 50" name="weight" id="weight" autocomplete="off" class="form-control bg-transparent" />
-                                                    
+                                                <div class="col fv-row mb-5">
+                                                    <label for="name" class="form-label fw-semibold required">Name</label>
+                                                    <!--begin::Full Name-->
+                                                    <input type="text" required placeholder="e.g. Gian Pranata" name="name" id="name" autocomplete="off" class="form-control bg-transparent" />
+                                                    <!--end::Full Name-->
                                                 </div>
                                                 <!--end::Input group=-->
-        
+            
                                                 <!--begin::Input group=-->
-                                                <div class="col fv-row mb-8">
-                                                    
-                                                    <input type="number" min="1" required placeholder="Height e.g. 163" name="height" id="height" autocomplete="off" class="form-control bg-transparent" />
-                                                    
-                                                </div>
-                                                <!--end::Input group=-->
-                                            </div>
-
-                                            <div class="d-flex gap-2">
-                                                <!--begin::Input group=-->
-                                                <div class="col fv-row mb-8">
-                                                    <!--begin::Division-->
-                                                    <select class="form-select" name="gender" id="gender" data-control="select2" data-placeholder="Select gender">
-                                                        <option></option>
-                                                        <option value="L">Laki-laki</option>
-                                                        <option value="P">Perempuan</option>
-                                                    </select>
-                                                    <!--end::Division-->
-                                                </div>
-                                                <!--end::Input group=-->
-                                                
-                                                <!--begin::Input group=-->
-                                                <div class="col fv-row mb-8">
-                                                    
-                                                    <input type="number" required placeholder="Age e.g. 20" name="age" id="age" autocomplete="off" class="form-control bg-transparent" />
-                                                    
+                                                <div class="col fv-row mb-5">
+                                                    <label for="username" class="form-label fw-semibold required">Username</label>
+                                                    <!--begin::Username-->
+                                                    <input type="text" required placeholder="e.g. gianpranata" name="username" id="usernameRegister" autocomplete="off" class="form-control bg-transparent" />
+                                                    <!--end::Username-->
                                                 </div>
                                                 <!--end::Input group=-->
                                             </div>
                                             
-                                            <!--begin::Input group=-->
-                                            <div class="fv-row mb-8">
-                                                <!--begin::Password-->
-                                                <input type="password" required placeholder="Password" name="password" id="passwordRegister" autocomplete="off" class="form-control bg-transparent" />
-                                                <!--end::Password-->
+                                            <div class="d-flex flex-column flex-md-row gap-2">
+                                                <!--begin::Input group=-->
+                                                <div class="col fv-row mb-5">
+                                                    <label for="password" class="form-label fw-semibold required">Password</label>
+                                                    <!--begin::Password-->
+                                                    <input type="password" required placeholder="Password" name="password" id="passwordRegister" autocomplete="off" class="form-control bg-transparent" />
+                                                    <!--end::Password-->
+                                                </div>
+                                                <!--end::Input group=-->
+        
+                                                <!--begin::Input group=-->
+                                                <div class="col fv-row mb-5">
+                                                    <label for="password_2" class="form-label fw-semibold required">Confirm Password</label>
+                                                    <!--begin::Password-->
+                                                    <input type="password" required placeholder="Confirm Password" name="password_2" id="password_2" autocomplete="off" class="form-control bg-transparent" />
+                                                    <!--end::Password-->
+                                                </div>
+                                                <!--end::Input group=-->
                                             </div>
-                                            <!--end::Input group=-->
-    
-                                            <!--begin::Input group=-->
-                                            <div class="fv-row mb-8">
-                                                <!--begin::Password-->
-                                                <input type="password" required placeholder="Confirm Password" name="password_2" id="password_2" autocomplete="off" class="form-control bg-transparent" />
-                                                <!--end::Password-->
-                                            </div>
-                                            <!--end::Input group=-->
-                                        <!-- </div> -->
                                         
                                         <!--begin::Submit button-->
                                         <div class="d-grid">

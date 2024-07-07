@@ -2,8 +2,8 @@
 							<div class="footer py-4 d-flex flex-column flex-md-row flex-stack" id="kt_footer">
 								<!--begin::Copyright-->
 								<div class="text-dark order-2 order-md-1">
-									<span class="text-muted fw-bold me-1">2023&copy;</span>
-									<a href="https://cklcargo.com" target="_blank" class="text-gray-800 fw-bold text-hover-primary">CKL Cargo</a>
+									<span class="text-muted fw-bold me-1">2024&copy;</span>
+									<a href="#" target="_blank" class="text-gray-800 fw-bold text-hover-primary">Gian Pranata - BMR Calculator</a>
 								</div>
 								<!--end::Copyright-->
 								<!--begin::Menu-->

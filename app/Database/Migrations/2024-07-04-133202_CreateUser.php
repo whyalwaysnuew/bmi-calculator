@@ -28,21 +28,9 @@ class CreateUser extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => 255
             ],
-            'gender' => [
-                'type' => 'CHAR',
-                'constraint' => 1,
-            ],
-            'weight' => [
-                'type' => 'DOUBLE',
-                'unsigned' => true
-            ],
-            'height' => [
+            'is_admin' => [
                 'type' => 'INT',
-                'unsigned' => true
-            ],
-            'age' => [
-                'type' => 'INT',
-                'unsigned' =>true
+                'default' => 0
             ]
         ]);
 

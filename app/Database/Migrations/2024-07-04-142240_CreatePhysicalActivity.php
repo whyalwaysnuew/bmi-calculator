@@ -21,6 +21,10 @@ class CreatePhysicalActivity extends Migration
             ],
             'description' => [
                 'type' => 'LONGTEXT'
+            ],
+            'calorie' => [
+                'type' => 'INT',
+                'unsigned'
             ]
         ]);
 

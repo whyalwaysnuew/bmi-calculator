@@ -1,18 +1,14 @@
 $('#buttonRegister').on('click', function (){
     var form = new FormData($('#FormRegister')[0]);
     let username = $('#usernameRegister').val();
-    let weight = $('#weight').val();
     let name = $('#name').val();
     let password = $('#passwordRegister').val();
     let password2 = $('#password_2').val();
-    let gender = $('#gender').val();
-    let age = $('#age').val();
-    let height = $('#height').val();
     var button = $('#buttonRegister');
 
     button.html('Please wait...<span class="spinner-border spinner-border-sm align-middle ms-2"></span>').attr('disabled', true);
 
-    if(username && weight && name && password && gender && age && height && password2 ){
+    if(name && username && password && password2 ){
       if(password == password2){
         $.ajax({
           url: base_url + "auth/register",
